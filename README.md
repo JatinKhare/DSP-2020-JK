@@ -1,29 +1,34 @@
 # **Filter**
 Write Arduino programs for studying the performance of the moving average (MA) filter and first-order derivative filter as described below:
-1. Moving Average Filter: $𝑦[𝑛]=\frac{1}{𝐿+1}\sum_{k=0}^{L}𝑥[𝑛−𝑘]$
+1. Moving Average Filter: <img style="float: right;" src="equations\1.png">
+
+   <br/><br/><br/>
+2. Derivative Filter, first-order difference:
+  
+   <img style="float: right;" src="equations\2.png">
+   <br/><br/><br/>
+3. Derivative Filter, three-point central difference: 
    
-2. Derivative Filter, first-order difference: $𝑦[𝑛]=𝑥[𝑛]−𝑥[𝑛−1]$
-   
-3. Derivative Filter, three-point central difference: $𝑦[𝑛]=𝑥[𝑛]−𝑥[𝑛−2]$
+<img style="float: right;" src="equations\3.png">
    
 <br/>
 
 # *Moving Average Filter*
  *Moving Average Filter Equation and transfer function
 
-<img style="float: right;" src="equations\eqma.jpg">
+<img style="float: right;" src="equations\eqma.png">
 
 
 <br/><br/><br/>
-<br/>
+
 
  *Poles and Zeros*
 
-<img style="float: right;" src="equations\pzma.jpg">
+<img style="float: right;" src="equations\pzma.png">
 
  *Moving Average Filter Magnitude and Phase* 
 
-<img style="float: right;" src="equations\mpma.jpg">
+<img style="float: right;" src="equations\mpma.png">
 
 ## **Code**
 ```cpp
@@ -88,16 +93,16 @@ void loop() // put your main code here, to run repeatedly:
 *First Order Difference Filter Equation and transfer function*
 
 
-<img style="float: right;" src="equations\eqfd.jpg">
+<img style="float: right;" src="equations\eqfd.png">
 
 *Pole/Zero*
 
-<left/><img style="float: right;" src="equations\dfpz.jpg"><left/>
+<left/><img style="float: right;" src="equations\dfpz.png"><left/>
 <br/><br/><br/><br/><br/>
 *First Order Difference Filter Magnitude and phase equation*
 
 
-<img style="float: right;" src="equations\pmfd.jpg">
+<img style="float: right;" src="equations\pmfd.png">
 
 ## **Code**
 
@@ -159,16 +164,16 @@ void loop() // put your main code here, to run repeatedly:
 *Second Order Difference Filter Equation and transfer function*
 
 
-<img style="float: right;" src="equations\eqsf.jpg">
+<img style="float: right;" src="equations\eqsf.png">
 
 *Pole/Zero*
 
-<left/><img style="float: right;" src="equations\pzsf.jpg"><left/>
+<left/><img style="float: right;" src="equations\pzsf.png"><left/>
 <br/><br/><br/><br/><br/>
 *Second Order Difference Filter Magnitude and phase equation*
 
 
-<img style="float: right;" src="equations\pmsf.jpg">
+<img style="float: right;" src="equations\pmsf.png">
 
 
 ## ***Code***
