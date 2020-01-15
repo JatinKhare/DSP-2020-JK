@@ -9,8 +9,21 @@ Write Arduino programs for studying the performance of the moving average (MA) f
 <br/>
 
 # *Moving Average Filter*
+ *Moving Average Filter Equation and transfer function
+
+<img style="float: right;" src="equations\eqma.jpg">
 
 
+<br/><br/><br/>
+<br/>
+
+ *Poles and Zeros*
+
+<img style="float: right;" src="equations\pzma.jpg">
+
+ *Moving Average Filter Magnitude and Phase* 
+
+<img style="float: right;" src="equations\mpma.jpg">
 
 ## **Code**
 ```cpp
@@ -72,9 +85,21 @@ void loop() // put your main code here, to run repeatedly:
 
 # *First Order Difference Filter*
 
+*First Order Difference Filter Equation and transfer function*
 
 
-## ***Code***
+<img style="float: right;" src="equations\eqfd.jpg">
+
+*Pole/Zero*
+
+<left/><img style="float: right;" src="equations\dfpz.jpg"><left/>
+<br/><br/><br/><br/><br/>
+*First Order Difference Filter Magnitude and phase equation*
+
+
+<img style="float: right;" src="equations\pmfd.jpg">
+
+## **Code**
 
 ```cpp
 
@@ -131,6 +156,19 @@ void loop() // put your main code here, to run repeatedly:
 
 # *Second Order Difference Filter*
 
+*Second Order Difference Filter Equation and transfer function*
+
+
+<img style="float: right;" src="equations\eqsf.jpg">
+
+*Pole/Zero*
+
+<left/><img style="float: right;" src="equations\pzsf.jpg"><left/>
+<br/><br/><br/><br/><br/>
+*Second Order Difference Filter Magnitude and phase equation*
+
+
+<img style="float: right;" src="equations\pmsf.jpg">
 
 
 ## ***Code***
