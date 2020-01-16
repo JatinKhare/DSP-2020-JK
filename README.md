@@ -1,17 +1,27 @@
 # **DSP Laboratory; Week -01**
 ## **Filter Analysis**
-Write Arduino programs for studying the performance of the moving average (MA) filter, first-order derivative filter, and second-order derivative filter. <br/>
-Lab Sheet can be found [here](pdf/DSP-Experiment01.pdf).
+Write Arduino programs for studying the performance of-
+* Moving Average Filter
+* First order difference filter
+* Three point central difference filter <br/>
+  
+The detailed lab sheet can be found [here](pdf/DSP-Experiment01.pdf).
+Let's start.
 # **Moving Average Filter**
 ## *Moving Average Filter Equation and transfer function*
-<img src="equations\eqma.png" width="618" height="197"> 
+<img src="equations\eqma.png" width="618" height="126"> 
+
+If we take L = 7 (8 samples), the transfer function becomes-
+<img src="equations\eqma8.png" width="287" height="63"> 
 
 ## *Poles and Zeros*
 <img src="equations\pzma.png" width="735" height="54"> 
+All the poles are at the origin.
+
+
 
 ## *Moving Average Filter Magnitude and Phase* 
 <img src="equations\mpma.png" width="481" height="80"> 
-
 
 ### **Moving Average Filter Plot Magnitude Plot**
 <img style="float: right;" src="polezero\MA-M.png"  width="600" height="325">
@@ -27,6 +37,8 @@ Lab Sheet can be found [here](pdf/DSP-Experiment01.pdf).
 <br/>
 
 ## **Arduino Code**
+Find the datafile [HERE](/data/ppgdata_Fs_100hz_1000samples_baseline_highfrequeny_noise.csvdata/).
+
 ```cpp
 //Input data; global declaration
 float x[1000] = {-194.7293734,-228.7205774,-241.1012313,...-144.4504403,-139.3705715,-155.2151228};
@@ -142,11 +154,11 @@ void loop() // put your main code here, to run repeatedly:
 ## *Pole/Zero*
 
 <img src="equations\pzsf.png" width="447" height="50">
+All the poles are at the origin.
 
 ## *Second Order Difference Filter Magnitude and phase equation*
 
 <img src="equations\pmsf.png" width="554" height="57">
-
 
 ### **Second Order Difference Filter Magnitude Plot** 
 <img style="float: right;" src="polezero\SF-M.png" width="600" height="325">
@@ -252,7 +264,7 @@ void loop() // put your main code here, to run repeatedly:
 }
 ```
 
-### **the plot is given below** - 
+##### **the plot is given below** - 
 <img style="float: right;" src="gifs\sf.gif">
 
 ##### **Smoothed First Order Difference Filter Plot Blue:  X; Red: Y**
