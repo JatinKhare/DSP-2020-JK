@@ -7,7 +7,9 @@ Write Arduino programs for studying the performance of-
   
 The detailed lab sheet can be found [here](pdf/DSP-Experiment01.pdf).
 Let's start.
-# **Moving Average Filter**
+# **1. Moving Average Filter**
+The moving average filter is a simple Low Pass FIR (Finite Impulse Response). It takes some samples of input and takes the mean of those to produce a single output. As the length of the filter increases, the smoothness of the output increases.
+
 ## *Moving Average (MA) Filter: Time Domain Equation and Transfer Function*
 <img src="equations\eqma.png" width="618" height="126"> 
 
@@ -38,11 +40,11 @@ All the poles are at the origin.
 
 
 ## **Arduino Code**
-Find the datafile [HERE](/data/ppgdata_Fs_100hz_1000samples_baseline_highfrequeny_noise.csvdata/).
+Find the datafile [HERE](/data/ppgdata_Fs_100hz_1000samples_baseline_highfrequeny_noise.csv/).
 
 ```cpp
 //Input data; global declaration
-float x[1000] = {-194.7293734,-228.7205774,-241.1012313,...-144.4504403,-139.3705715,-155.2151228};
+float x[1000] = {-194.7293734,-228.7205774,-241.1012313,....-144.4504403,-139.3705715,-155.2151228};
 
 void setup() // put your setup code here, to run once:
 {
@@ -55,9 +57,10 @@ void loop() // put your main code here, to run repeatedly:
   {
     y[i]=0; //Initializing all zero
   }
-  int l = 800;
+  int l = 8;  //Size fof the window
   
   //Moving Average filter
+
   for(int i=0;i<1000;i++)  //for loop for 1000 times
   {
     for(int j=0;j<l;j++)
@@ -68,7 +71,7 @@ void loop() // put your main code here, to run repeatedly:
       }
       y[i]=y[i]/l;
     }
-    Serial.print(x[i]/100); //plotting input x
+    Serial.print(x[i]/100); //plotting input x (with proper scaling)
     Serial.print(',');
     Serial.println(y[i]);  //plotting output y
   }
@@ -92,14 +95,16 @@ void loop() // put your main code here, to run repeatedly:
 
 
 
-# **First Order Difference Filter**
+# **2. First Order Difference Filter**
+The first-order difference filter is a FIR filter, where previous input is subtracted from the current input to get the current output. Also known as derivative filter, it essentisally emphasizes the high-slope components of the signal.<hr />
+
 
 ## *First Order Difference Filter: Time Domain Equation Equation and Transfer Function*
 
 <img src="equations\eqfd.png" width="392" height="105"> <br/>
 <hr />
 
-## **First Order Difference Filter: Poles and Zeros*
+## *First Order Difference Filter: Poles and Zeros*
 <img  src="equations\dfpz.png" width="499" height="55"> <br/>
 <hr />
 
@@ -119,31 +124,34 @@ void loop() // put your main code here, to run repeatedly:
 <br/>
 
 ## **Arduino Code**
+Find the datafile [HERE](/data/ppgdata_Fs_100hz_1000samples_baseline_highfrequeny_noise.csv/).
 
 ```cpp
 
 //Input data; global declaration
 float x[1000] = {-194.7293734,-228.7205774,-241.1012313,...-144.4504403,-139.3705715,-155.2151228};
 
-void setup() // put your setup code here, to run once:
+void setup()  //put your setup code here, to run once:
 {
   Serial.begin(9600); //Setting up the baud rate
 }
 
 void loop() // put your main code here, to run repeatedly:
 {
-  float y[1000];  //array to store the difference
+  float y[1000];    //array to store the difference
   for(int i=0;i<1000;i++)
   {
-    y[i]=0;  //Initializing all zero
+    y[i]=0;         //Initializing all zero
   }
 
   y[0]=x[0];
+
   //first order difference filter
+
   for(int i=1;i<1000;i++) //for loop for 1000 times
   {
     y[i]=x[i]-x[i-1];
-    Serial.print(x[i]); //plotting input x
+    Serial.print(x[i]);   //plotting input x
     Serial.print(',');
     Serial.println(y[i]); //plotting output y
   }
@@ -160,7 +168,12 @@ void loop() // put your main code here, to run repeatedly:
 
 
  
-# **Three Point Central Difference Filter**
+# **3. Three Point Central Difference Filter**
+The three-point central difference filter is a FIR filter, where previous input is subtracted from the current input to get the current output. Also known as derivative filter, it essentisally emphasizes the high-slope components of the signal.
+
+<img src="gifs\filter.gif" width="300" height="200"><br/>
+The main difference between a 1st and 2nd order low pass filter is that the stop band roll-off will be twice the 1st order filters at 40dB/decade
+<hr />
 
 ## *Three Point Central Difference Filter: Time Domain Equation Equation and transfer function*
 
@@ -194,6 +207,7 @@ All the poles are at the origin.
 <br/>
 
 ## ***Arduino Code***
+Find the datafile [HERE](/data/ppgdata_Fs_100hz_1000samples_baseline_highfrequeny_noise.csv/).
 
 ```cpp
 //Input data; global declaration
@@ -235,7 +249,7 @@ void loop() // put your main code here, to run repeatedly:
 
 
 
-# **First Order Difference Filter and Smoothing with Moving Average**
+# **4. First Order Difference Filter and Smoothing with Moving Average**
 
 
 ## ***Code***
@@ -267,7 +281,8 @@ void loop() // put your main code here, to run repeatedly:
   {
     y1[i]=0;  //Initializing all zero
   }
-  //ma filter
+
+  //moving average filter
   for(int i=0;i<1000;i++)
   {
     for(int j=0;j<l;j++)
