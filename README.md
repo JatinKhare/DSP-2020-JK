@@ -8,31 +8,31 @@ Write Arduino programs for studying the performance of-
 The detailed lab sheet can be found [here](pdf/DSP-Experiment01.pdf).
 Let's start.
 # **Moving Average Filter**
-## *Moving Average Filter Equation and transfer function*
+## *Moving Average (MA) Filter: Time Domain Equation and Transfer Function*
 <img src="equations\eqma.png" width="618" height="126"> 
 
 If we take L = 7 (8 samples), the transfer function becomes- <br/>
 <img src="equations\eqma8.png" width="287" height="63"> 
 <hr />
 
-## *Poles and Zeros*
+## *Moving Average (MA) Filter: Poles and Zeros*
 <img src="equations\pzma.png" width="735" height="54"> 
 All the poles are at the origin.
 <hr  />
 
-## *Moving Average Filter Magnitude and Phase* 
+## *Moving Average (MA) Filter: Magnitude and Phase Equation* 
 <img src="equations\mpma.png" width="481" height="80"> 
 <hr />
 
-### **Moving Average Filter Plot Magnitude Plot**
+### **Moving Average (MA) Filter: Magnitude Plot**
 <img style="float: right;" src="polezero\MA-M.png"  width="600" height="325">
 
 
-### **Moving Average Filter Plot Phase Plot**
+### **Moving Average (MA) Filter: Phase Plot**
 
 <img style="float: right;" src="polezero\MA-P.png" width="600" height="325">
 
-### **Moving Average Filter Plot Pole/Zero Plot**
+### **Moving Average (MA) Filter: Poles and Zeros Plot**
 <img style="float: right;" src="polezero\MAPz.png" width="540" height="432">
 
 
@@ -74,11 +74,17 @@ void loop() // put your main code here, to run repeatedly:
   }
 }
 ```
-##### **the plot is given below** - 
+##### **For L = 8,  the plot is given below** - 
 <img style="float: right;" src="gifs\ma.gif">
 <br/>
 
- *Moving Average Filter Plot* Blue:  X; Red: Y
+ *Moving Average Filter Plot for small window* Blue:  X; Red: Y
+
+ ##### **For L = 800,  the plot is given below** - 
+<img style="float: right;" src="gifs\ma800.gif">
+<br/>
+
+ *Moving Average Filter Plot for large window* Blue:  X; Red: Y
 <hr />
 <hr />
 <hr />
@@ -88,27 +94,27 @@ void loop() // put your main code here, to run repeatedly:
 
 # **First Order Difference Filter**
 
-## *First Order Difference Filter Equation and transfer function*
+## *First Order Difference Filter: Time Domain Equation Equation and Transfer Function*
 
 <img src="equations\eqfd.png" width="392" height="105"> <br/>
 <hr />
 
-## *Pole/Zero*
+## **First Order Difference Filter: Poles and Zeros*
 <img  src="equations\dfpz.png" width="499" height="55"> <br/>
 <hr />
 
-## *First Order Difference Filter Magnitude and phase equation*
+## *First Order Difference Filter: Magnitude and Phase Equation*
 <img src="equations\pmfd.png" width="499" height="55"> <br/>
 <hr />
 
-### **First Order Difference Filter Magnitude Plot**
+### **First Order Difference Filter: Magnitude Plot**
 
 <img style="float: right;" src="polezero\DF-M.png" width="600" height="325"> 
 
-### **First Order Difference Filter Phase Plot** 
+### **First Order Difference Filter: Phase Plot** 
 <img style="float: right;" src="polezero\DF-P.png" width="600" height="325"> 
 
-### **First Order Difference Filter Pole/Zero Plot**
+### **First Order Difference Filter: Poles and Zeros Plot**
 <img style="float: right;" src="polezero\DFPZ.png" width="540" height="432"> <br/>
 <br/>
 
@@ -156,31 +162,31 @@ void loop() // put your main code here, to run repeatedly:
  
 # **Three Point Central Difference Filter**
 
-## *Three Point Central Difference Filter Equation and transfer function*
+## *Three Point Central Difference Filter: Time Domain Equation Equation and transfer function*
 
 <img src="equations\eqsf.png" width="586" height="130">
 
 <hr />
 
-## *Pole/Zero*
+## *Three Point Central Difference Filter: Poles and Zeros*
 
 <img src="equations\pzsf.png" width="447" height="50">
 All the poles are at the origin.
 <hr />
 
-## *Three Point Central Difference Filter Magnitude and phase equation*
+## *Three Point Central Difference Filter: Magnitude and Phase Equation*
 
 <img src="equations\pmsf.png" width="554" height="57">
 <hr />
 
-### **Three Point Central Difference Filter Magnitude Plot** 
+### **Three Point Central Difference Filter: Magnitude Plot** 
 <img style="float: right;" src="polezero\SF-M.png" width="600" height="325">
 
-### **Three Point Central Difference Filter Phase Plot** 
+### **Three Point Central Difference Filter: Phase Plot** 
 
 <img style="float: right;" src="polezero\SF-P.png" width="600" height="325">
 
-### **Three Point Central Difference Filter Pole/Zero Plot**
+### **Three Point Central Difference Filter: Poles and Zeros Plot**
 
 <img style="float: right;" src="polezero\SFPZ.png" width="540" height="432">
 
