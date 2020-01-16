@@ -9,6 +9,7 @@ The detailed lab sheet can be found [here](pdf/DSP-Experiment01.pdf).
 Let's start.
 # **1. Moving Average Filter**
 The moving average filter is a simple Low Pass FIR (Finite Impulse Response). It takes some samples of input and takes the mean of those to produce a single output. As the length of the filter increases, the smoothness of the output increases.
+<hr />
 
 ## *Moving Average (MA) Filter: Time Domain Equation and Transfer Function*
 <img src="equations\eqma.png" width="618" height="126"> 
@@ -88,6 +89,7 @@ void loop() // put your main code here, to run repeatedly:
 <br/>
 
  *Moving Average Filter Plot for large window* Blue:  X; Red: Y
+ <br/>*which is nothing but baseline extraction!
 <hr />
 <hr />
 <hr />
@@ -169,10 +171,10 @@ void loop() // put your main code here, to run repeatedly:
 
  
 # **3. Three Point Central Difference Filter**
-The three-point central difference filter is a FIR filter, where previous input is subtracted from the current input to get the current output. Also known as derivative filter, it essentisally emphasizes the high-slope components of the signal.
+The three-point central difference filter is also a FIR filter.
 
 <img src="gifs\filter.gif" width="300" height="200"><br/>
-The main difference between a 1st and 2nd order low pass filter is that the stop band roll-off will be twice the 1st order filters at 40dB/decade
+The main difference between a 1st and 2nd order low pass filter is that the stop band roll-off will be twice the 1st order filters at 40dB/decade.
 <hr />
 
 ## *Three Point Central Difference Filter: Time Domain Equation Equation and transfer function*
