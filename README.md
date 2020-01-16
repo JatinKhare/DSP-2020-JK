@@ -3,18 +3,14 @@ Write Arduino programs for studying the performance of the moving average (MA) f
 
 # *Moving Average Filter*
 ## *Moving Average Filter Equation and transfer function*
-
-<img style="float: right;" src="equations\eqma.png" width="618" height="197">
+<img src="equations\eqma.png" width="618" height="197"> <br/>
 
 ## *Poles and Zeros*
+<img src="equations\pzma.png" width="735" height="54"> <br/>
 
-<img style="float: right;" src="equations\pzma.png" width="735" height="54">
-<br/>
 
 ## *Moving Average Filter Magnitude and Phase* 
-
-<img style="float: right;" src="equations\mpma.png" width="481" height="80">
-<br/>
+<img src="equations\mpma.png" width="481" height="80"> <br/>
 
 ### **the plots are given below** - 
 <img style="float: right;" src="polezero\MA-M.png"  width="600" height="325">
@@ -90,6 +86,21 @@ void loop() // put your main code here, to run repeatedly:
 ## *First Order Difference Filter Magnitude and phase equation*
 <img src="equations\pmfd.png" width="499" height="55"> <br/>
 
+
+*First Order Difference Filter Plot* Blue:  X; Red: Y
+<img style="float: right;" src="polezero\DF-M.png" width="600" height="325"> <br/>
+ 
+
+ *First Order Difference Filter Magnitude Plot*
+
+<img style="float: right;" src="polezero\DF-P.png" width="600" height="325"> <br/>
+
+
+ *First Order Difference Filter Phase Plot*   
+<img style="float: right;" src="polezero\DFPZ.png" width="540" height="432"> <br/>
+
+ *First Order Difference Filter Pole/Zero Plot* 
+
 ## **Code**
 
 ```cpp
@@ -125,41 +136,43 @@ void loop() // put your main code here, to run repeatedly:
 <img style="float: right;" src="gifs\fdf.gif">
 <br/>
 
- *First Order Difference Filter Plot* Blue:  X; Red: Y
-
-<img style="float: right;" src="polezero\DF-M.png" width="600" height="325">
-<br/>
-
- *First Order Difference Filter Magnitude Plot*
-
-
-<img style="float: right;" src="polezero\DF-P.png" width="600" height="325">
-<br/>
-
- *First Order Difference Filter Phase Plot*   
-
-<img style="float: right;" src="polezero\DFPZ.png" width="540" height="432">
-<br/>
-
- *First Order Difference Filter Pole/Zero Plot* 
-
+ 
 
 # *Second Order Difference Filter*
 
 ## *Second Order Difference Filter Equation and transfer function*
 
-<img style="float: right;" src="equations\eqsf.png" width="586" height="130">
+<img src="equations\eqsf.png" width="586" height="130">
 <br/>
 
 ## *Pole/Zero*
 
-<img style="float: right;" src="equations\pzsf.png" width="447" height="50">
+<img src="equations\pzsf.png" width="447" height="50">
 <br/>
 
 ## *Second Order Difference Filter Magnitude and phase equation*
 
-<img style="float: right;" src="equations\pmsf.png" width="554" height="57">
+<img src="equations\pmsf.png" width="554" height="57">
 <br/>
+
+*Second Order Difference Filter Plot* Blue:  X; Red: Y
+<br/>
+
+
+<img style="float: right;" src="polezero\SF-M.png" width="600" height="325">
+
+ *Second Order Difference Filter Magnitude Plot* 
+<br/>
+
+
+<img style="float: right;" src="polezero\SF-P.png" width="600" height="325">
+
+ *Second Order Difference Filter Phase Plot*   
+<br/>
+
+<img style="float: right;" src="polezero\SFPZ.png" width="540" height="432">
+
+ *Second Order Difference Filter Pole/Zero Plot* 
 
 ## ***Code***
 
@@ -195,26 +208,6 @@ void loop() // put your main code here, to run repeatedly:
 ```
 ### **the plots are given below** - 
 <img style="float: right;" src="gifs\sf.gif">
-
- *Second Order Difference Filter Plot* Blue:  X; Red: Y
-<br/>
-
-
-<img style="float: right;" src="polezero\SF-M.png" width="600" height="325">
-
- *Second Order Difference Filter Magnitude Plot* 
-<br/>
-
-
-<img style="float: right;" src="polezero\SF-P.png" width="600" height="325">
-
- *Second Order Difference Filter Phase Plot*   
-<br/>
-
-<img style="float: right;" src="polezero\SFPZ.png" width="540" height="432">
-
- *Second Order Difference Filter Pole/Zero Plot* 
-
 
 # *First Order Difference Filter and Smoothing with Moving Average*
 
