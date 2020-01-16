@@ -1,6 +1,7 @@
-# **Filter**
-Write Arduino programs for studying the performance of the moving average (MA) filter, first-order derivative filter, and second-order derivative filter.
-
+# **DSP Laboratory; Week -01**
+## **Filter Analysis**
+Write Arduino programs for studying the performance of the moving average (MA) filter, first-order derivative filter, and second-order derivative filter. <br/>
+Lab Sheet can be found [here](pdf/DSP-Experiment01.pdf).
 # *Moving Average Filter*
 ## *Moving Average Filter Equation and transfer function*
 <img src="equations\eqma.png" width="618" height="197"> <br/>
