@@ -155,7 +155,6 @@ void loop() // put your main code here, to run repeatedly:
 ## *Second Order Difference Filter Equation and transfer function*
 
 <img style="float: right;" src="equations\eqsf.png">
-
 <br/>
 
 ## *Pole/Zero*
