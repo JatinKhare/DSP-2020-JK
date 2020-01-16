@@ -61,7 +61,7 @@ void loop() // put your main code here, to run repeatedly:
 
 <br/>
 
-<img style="float: right;" src="polezero\MA-M.png"  width="575" height="310">
+<img style="float: right;" src="polezero\MA-M.png"  width="600" height="325">
 <br/>
 
  *Moving Average Filter Plot Magnitude Plot* 
