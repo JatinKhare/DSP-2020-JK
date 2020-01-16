@@ -4,33 +4,26 @@ Write Arduino programs for studying the performance of the moving average (MA) f
 Lab Sheet can be found [here](pdf/DSP-Experiment01.pdf).
 # **Moving Average Filter**
 ## *Moving Average Filter Equation and transfer function*
-<img src="equations\eqma.png" width="618" height="197"> <br/>
+<img src="equations\eqma.png" width="618" height="197"> 
 
 ## *Poles and Zeros*
-<img src="equations\pzma.png" width="735" height="54"> <br/>
-
+<img src="equations\pzma.png" width="735" height="54"> 
 
 ## *Moving Average Filter Magnitude and Phase* 
-<img src="equations\mpma.png" width="481" height="80"> <br/><br/>
+<img src="equations\mpma.png" width="481" height="80"> 
 
-### **the plots are given below** - 
+
+### **Moving Average Filter Plot Magnitude Plot**
 <img style="float: right;" src="polezero\MA-M.png"  width="600" height="325">
-<br/>
 
-##### **Moving Average Filter Plot Magnitude Plot**
-<br/>
+### **Moving Average Filter Plot Phase Plot**
 
 <img style="float: right;" src="polezero\MA-P.png" width="600" height="325">
-<br/>
 
-##### **Moving Average Filter Plot Phase Plot**
-
-
+### **Moving Average Filter Plot Pole/Zero Plot**
 <img style="float: right;" src="polezero\MAPz.png" width="540" height="432">
+
 <br/>
-
-##### **Moving Average Filter Plot Pole/Zero Plot**
-
 <br/>
 
 ## **Arduino Code**
@@ -68,7 +61,7 @@ void loop() // put your main code here, to run repeatedly:
   }
 }
 ```
-
+##### **the plot is given below** - 
 <img style="float: right;" src="gifs\ma.gif">
 <br/>
 
@@ -149,28 +142,25 @@ void loop() // put your main code here, to run repeatedly:
 ## *Pole/Zero*
 
 <img src="equations\pzsf.png" width="447" height="50">
-<br/>
 
 ## *Second Order Difference Filter Magnitude and phase equation*
 
 <img src="equations\pmsf.png" width="554" height="57">
-<br/>
 
 
+### **Second Order Difference Filter Magnitude Plot** 
 <img style="float: right;" src="polezero\SF-M.png" width="600" height="325">
 
-##### **Second Order Difference Filter Magnitude Plot** 
-<br/>
-
+### **Second Order Difference Filter Phase Plot** 
 
 <img style="float: right;" src="polezero\SF-P.png" width="600" height="325">
 
-##### **Second Order Difference Filter Phase Plot** 
-<br/>
+### **Second Order Difference Filter Pole/Zero Plot**
 
 <img style="float: right;" src="polezero\SFPZ.png" width="540" height="432">
 
- ##### **Second Order Difference Filter Pole/Zero Plot**
+<br/>
+<br/>
 
 ## ***Arduino Code***
 
@@ -204,7 +194,7 @@ void loop() // put your main code here, to run repeatedly:
   }
  }
 ```
-### **the plots are given below** - 
+##### **the plot is given below** - 
 <img style="float: right;" src="gifs\sf.gif">
 
 ##### **Second Order Difference Filter Plot Blue:  X; Red: Y**
