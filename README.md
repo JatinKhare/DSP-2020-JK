@@ -70,7 +70,7 @@ void loop() // put your main code here, to run repeatedly:
 }
 ```
 
-<img style="float: right;" src="gifs\ma.gif" width="800" height="420"> 
+<img style="float: right;" src="gifs\ma.gif">
 <br/>
 
  *Moving Average Filter Plot* Blue:  X; Red: Y
