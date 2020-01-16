@@ -82,19 +82,13 @@ void loop() // put your main code here, to run repeatedly:
 
 ## *First Order Difference Filter Equation and transfer function*
 
-
-<img style="float: right;" src="equations\eqfd.png" width="392" height="105">
-<br/>
+<img src="equations\eqfd.png" width="392" height="105"> <br/>
 
 ## *Pole/Zero*
-
-<img style="float: right;" src="equations\dfpz.png" width="499" height="55">
-<br/>
+<img  src="equations\dfpz.png" width="499" height="55"> <br/>
 
 ## *First Order Difference Filter Magnitude and phase equation*
-
-<img style="float: right;" src="equations\pmfd.png" width="499" height="55">
-<br/>
+<img src="equations\pmfd.png" width="499" height="55"> <br/>
 
 ## **Code**
 
