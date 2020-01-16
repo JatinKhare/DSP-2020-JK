@@ -81,17 +81,17 @@ void loop() // put your main code here, to run repeatedly:
 ## *First Order Difference Filter Equation and transfer function*
 
 
-<img style="float: right;" src="equations\eqfd.png">
+<img style="float: right;" src="equations\eqfd.png" width="392" height="105">
 <br/>
 
 ## *Pole/Zero*
 
-<img style="float: right;" src="equations\dfpz.png">
+<img style="float: right;" src="equations\dfpz.png" width="499" height="55">
 <br/>
 
 ## *First Order Difference Filter Magnitude and phase equation*
 
-<img style="float: right;" src="equations\pmfd.png">
+<img style="float: right;" src="equations\pmfd.png" width="499" height="55">
 <br/>
 
 ## **Code**
@@ -152,17 +152,17 @@ void loop() // put your main code here, to run repeatedly:
 
 ## *Second Order Difference Filter Equation and transfer function*
 
-<img style="float: right;" src="equations\eqsf.png">
+<img style="float: right;" src="equations\eqsf.png" width="586" height="130">
 <br/>
 
 ## *Pole/Zero*
 
-<img style="float: right;" src="equations\pzsf.png">
+<img style="float: right;" src="equations\pzsf.png" width="447" height="50">
 <br/>
 
 ## *Second Order Difference Filter Magnitude and phase equation*
 
-<img style="float: right;" src="equations\pmsf.png">
+<img style="float: right;" src="equations\pmsf.png" width="554" height="57">
 <br/>
 
 ## ***Code***
