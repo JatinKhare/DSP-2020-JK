@@ -4,16 +4,16 @@ Write Arduino programs for studying the performance of the moving average (MA) f
 # *Moving Average Filter*
 ## *Moving Average Filter Equation and transfer function*
 
-<img style="float: right;" src="equations\eqma.png" width="442" height="141">
+<img style="float: right;" src="equations\eqma.png" width="618" height="197">
 
 ## *Poles and Zeros*
 
-<img style="float: right;" src="equations\pzma.png" width="540" height="45">
+<img style="float: right;" src="equations\pzma.png" width="735" height="54">
 <br/>
 
 ## *Moving Average Filter Magnitude and Phase* 
 
-<img style="float: right;" src="equations\mpma.png" width="344" height="57">
+<img style="float: right;" src="equations\mpma.png" width="481" height="80">
 <br/>
 
 ## **Code**
