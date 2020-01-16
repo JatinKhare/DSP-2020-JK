@@ -2,7 +2,7 @@
 ## **Filter Analysis**
 Write Arduino programs for studying the performance of the moving average (MA) filter, first-order derivative filter, and second-order derivative filter. <br/>
 Lab Sheet can be found [here](pdf/DSP-Experiment01.pdf).
-# *Moving Average Filter*
+# **Moving Average Filter**
 ## *Moving Average Filter Equation and transfer function*
 <img src="equations\eqma.png" width="618" height="197"> <br/>
 
@@ -77,7 +77,7 @@ void loop() // put your main code here, to run repeatedly:
 <br/>
 
 
-# *First Order Difference Filter*
+# **First Order Difference Filter**
 
 ## *First Order Difference Filter Equation and transfer function*
 
@@ -89,20 +89,15 @@ void loop() // put your main code here, to run repeatedly:
 ## *First Order Difference Filter Magnitude and phase equation*
 <img src="equations\pmfd.png" width="499" height="55"> <br/>
 
+### **First Order Difference Filter Magnitude Plot**
 
-<img style="float: right;" src="polezero\DF-M.png" width="600" height="325"> <br/>
- 
+<img style="float: right;" src="polezero\DF-M.png" width="600" height="325"> 
 
-##### **First Order Difference Filter Magnitude Plot**
+### **First Order Difference Filter Phase Plot** 
+<img style="float: right;" src="polezero\DF-P.png" width="600" height="325"> 
 
-<img style="float: right;" src="polezero\DF-P.png" width="600" height="325"> <br/>
-
-
- ##### **First Order Difference Filter Phase Plot** 
+### **First Order Difference Filter Pole/Zero Plot**
 <img style="float: right;" src="polezero\DFPZ.png" width="540" height="432"> <br/>
-
- ##### **First Order Difference Filter Pole/Zero Plot**
-
 <br/>
 
 ## **Arduino Code**
@@ -136,7 +131,7 @@ void loop() // put your main code here, to run repeatedly:
   }
 }
 ```
-### **the plots are given below** - 
+##### **the plot is given below** - 
 <img style="float: right;" src="gifs\fdf.gif">
 
 ##### **First Order Difference Filter Plot Blue:  X; Red: Y**
@@ -144,7 +139,7 @@ void loop() // put your main code here, to run repeatedly:
 <br/>
 
  
-# *Second Order Difference Filter*
+# **Second Order Difference Filter**
 
 ## *Second Order Difference Filter Equation and transfer function*
 
@@ -214,7 +209,7 @@ void loop() // put your main code here, to run repeatedly:
 
 ##### **Second Order Difference Filter Plot Blue:  X; Red: Y**
 
-# *First Order Difference Filter and Smoothing with Moving Average*
+# **First Order Difference Filter and Smoothing with Moving Average**
 
 
 
