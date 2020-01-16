@@ -71,7 +71,7 @@ void loop() // put your main code here, to run repeatedly:
 
 <br/>
 <br/>
-<img style="float: right;" src="polezero\MAPZ.png">
+<img style="float: right;" src="polezero\MAPz.png">
 
  *Moving Average Filter Plot Pole/Zero Plot*
 <br/><br/><br/>
