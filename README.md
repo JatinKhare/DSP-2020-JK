@@ -9,7 +9,6 @@ Write Arduino programs for studying the performance of the moving average (MA) f
 
 ## *Poles and Zeros*
 
-
 <img style="float: right;" src="equations\pzma.png">
 <br/>
 
@@ -73,7 +72,7 @@ void loop() // put your main code here, to run repeatedly:
  *Moving Average Filter Plot Phase Plot* 
 
 
-<img style="float: right;" src="polezero\MAPz.png">
+<img style="float: right;" src="polezero\MAPz.png" width="540" height="432">
 <br/>
 
  *Moving Average Filter Plot Pole/Zero Plot*
@@ -144,7 +143,7 @@ void loop() // put your main code here, to run repeatedly:
 
  *First Order Difference Filter Phase Plot*   
 
-<img style="float: right;" src="polezero\DFPZ.png">
+<img style="float: right;" src="polezero\DFPZ.png" width="540" height="432">
 <br/>
 
  *First Order Difference Filter Pole/Zero Plot* 
@@ -217,7 +216,7 @@ void loop() // put your main code here, to run repeatedly:
  *Second Order Difference Filter Phase Plot*   
 <br/>
 
-<img style="float: right;" src="polezero\SFPZ.png" width="500" height="400">
+<img style="float: right;" src="polezero\SFPZ.png" width="540" height="432">
 
  *Second Order Difference Filter Pole/Zero Plot* 
 
