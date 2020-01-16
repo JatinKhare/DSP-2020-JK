@@ -58,7 +58,7 @@ void loop() // put your main code here, to run repeatedly:
   {
     y[i]=0; //Initializing all zero
   }
-  int l = 8;  //Size fof the window
+  int l = 8;  //Size of the window
   
   //Moving Average filter
 
