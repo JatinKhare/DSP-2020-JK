@@ -67,13 +67,13 @@ void loop() // put your main code here, to run repeatedly:
  *Moving Average Filter Plot Magnitude Plot* 
 <br/>
 
-<img style="float: right;" src="polezero\MA-P.png">
+<img style="float: right;" src="polezero\MA-P.png" width="600" height="325">
 <br/>
 
  *Moving Average Filter Plot Phase Plot* 
 
 
-<img style="float: right;" src="polezero\MAPZ.png">
+<img style="float: right;" src="polezero\MAPz.png">
 <br/>
 
  *Moving Average Filter Plot Pole/Zero Plot*
@@ -133,13 +133,13 @@ void loop() // put your main code here, to run repeatedly:
 
  *First Order Difference Filter Plot* Blue:  X; Red: Y
 
-<img style="float: right;" src="polezero\DF-M.png">
+<img style="float: right;" src="polezero\DF-M.png" width="600" height="325">
 <br/>
 
  *First Order Difference Filter Magnitude Plot*
 
 
-<img style="float: right;" src="polezero\DF-P.png">
+<img style="float: right;" src="polezero\DF-P.png" width="600" height="325">
 <br/>
 
  *First Order Difference Filter Phase Plot*   
@@ -206,18 +206,18 @@ void loop() // put your main code here, to run repeatedly:
 <br/>
 
 
-<img style="float: right;" src="polezero\SF-M.png">
+<img style="float: right;" src="polezero\SF-M.png" width="600" height="325">
 
  *Second Order Difference Filter Magnitude Plot* 
 <br/>
 
 
-<img style="float: right;" src="polezero\SF-P.png">
+<img style="float: right;" src="polezero\SF-P.png" width="600" height="325">
 
  *Second Order Difference Filter Phase Plot*   
 <br/>
 
-<img style="float: right;" src="polezero\SFPZ.png">
+<img style="float: right;" src="polezero\SFPZ.png" width="500" height="400">
 
  *Second Order Difference Filter Pole/Zero Plot* 
 
