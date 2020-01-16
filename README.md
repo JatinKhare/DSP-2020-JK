@@ -11,20 +11,22 @@ Let's start.
 ## *Moving Average Filter Equation and transfer function*
 <img src="equations\eqma.png" width="618" height="126"> 
 
-If we take L = 7 (8 samples), the transfer function becomes-
+If we take L = 7 (8 samples), the transfer function becomes- <br/>
 <img src="equations\eqma8.png" width="287" height="63"> 
+<hr />
 
 ## *Poles and Zeros*
 <img src="equations\pzma.png" width="735" height="54"> 
 All the poles are at the origin.
-
-
+<hr  />
 
 ## *Moving Average Filter Magnitude and Phase* 
 <img src="equations\mpma.png" width="481" height="80"> 
+<hr />
 
 ### **Moving Average Filter Plot Magnitude Plot**
 <img style="float: right;" src="polezero\MA-M.png"  width="600" height="325">
+
 
 ### **Moving Average Filter Plot Phase Plot**
 
@@ -33,8 +35,7 @@ All the poles are at the origin.
 ### **Moving Average Filter Plot Pole/Zero Plot**
 <img style="float: right;" src="polezero\MAPz.png" width="540" height="432">
 
-<br/>
-<br/>
+
 
 ## **Arduino Code**
 Find the datafile [HERE](/data/ppgdata_Fs_100hz_1000samples_baseline_highfrequeny_noise.csvdata/).
@@ -78,8 +79,11 @@ void loop() // put your main code here, to run repeatedly:
 <br/>
 
  *Moving Average Filter Plot* Blue:  X; Red: Y
+<hr />
+<hr />
+<hr />
 
-<br/>
+
 
 
 # **First Order Difference Filter**
@@ -87,12 +91,15 @@ void loop() // put your main code here, to run repeatedly:
 ## *First Order Difference Filter Equation and transfer function*
 
 <img src="equations\eqfd.png" width="392" height="105"> <br/>
+<hr />
 
 ## *Pole/Zero*
 <img  src="equations\dfpz.png" width="499" height="55"> <br/>
+<hr />
 
 ## *First Order Difference Filter Magnitude and phase equation*
 <img src="equations\pmfd.png" width="499" height="55"> <br/>
+<hr />
 
 ### **First Order Difference Filter Magnitude Plot**
 
@@ -141,33 +148,39 @@ void loop() // put your main code here, to run repeatedly:
 
 ##### **First Order Difference Filter Plot Blue:  X; Red: Y**
 
-<br/>
+<hr />
+<hr />
+<hr />
+
 
  
-# **Second Order Difference Filter**
+# **Three Point Central Difference Filter**
 
-## *Second Order Difference Filter Equation and transfer function*
+## *Three Point Central Difference Filter Equation and transfer function*
 
 <img src="equations\eqsf.png" width="586" height="130">
-<br/>
+
+<hr />
 
 ## *Pole/Zero*
 
 <img src="equations\pzsf.png" width="447" height="50">
 All the poles are at the origin.
+<hr />
 
-## *Second Order Difference Filter Magnitude and phase equation*
+## *Three Point Central Difference Filter Magnitude and phase equation*
 
 <img src="equations\pmsf.png" width="554" height="57">
+<hr />
 
-### **Second Order Difference Filter Magnitude Plot** 
+### **Three Point Central Difference Filter Magnitude Plot** 
 <img style="float: right;" src="polezero\SF-M.png" width="600" height="325">
 
-### **Second Order Difference Filter Phase Plot** 
+### **Three Point Central Difference Filter Phase Plot** 
 
 <img style="float: right;" src="polezero\SF-P.png" width="600" height="325">
 
-### **Second Order Difference Filter Pole/Zero Plot**
+### **Three Point Central Difference Filter Pole/Zero Plot**
 
 <img style="float: right;" src="polezero\SFPZ.png" width="540" height="432">
 
@@ -195,7 +208,7 @@ void loop() // put your main code here, to run repeatedly:
 
   y[0]=x[0]; y[1]=x[1];
   
-  //Second order difference filter
+  //Three Point Central Difference Filter
   
   for(int i=2;i<1000;i++) //for loop for 1000 times
   {
@@ -209,10 +222,14 @@ void loop() // put your main code here, to run repeatedly:
 ##### **the plot is given below** - 
 <img style="float: right;" src="gifs\sf.gif">
 
-##### **Second Order Difference Filter Plot Blue:  X; Red: Y**
+##### **Three Point Central Difference Filter Plot Blue:  X; Red: Y**
+<hr/>
+<hr/>
+<hr/>
+
+
 
 # **First Order Difference Filter and Smoothing with Moving Average**
-
 
 
 ## ***Code***
