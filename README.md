@@ -16,6 +16,24 @@ Write Arduino programs for studying the performance of the moving average (MA) f
 <img style="float: right;" src="equations\mpma.png" width="481" height="80">
 <br/>
 
+### **the plots are given below** - 
+<img style="float: right;" src="polezero\MA-M.png"  width="600" height="325">
+<br/>
+
+ *Moving Average Filter Plot Magnitude Plot* 
+<br/>
+
+<img style="float: right;" src="polezero\MA-P.png" width="600" height="325">
+<br/>
+
+ *Moving Average Filter Plot Phase Plot* 
+
+
+<img style="float: right;" src="polezero\MAPz.png" width="540" height="432">
+<br/>
+
+ *Moving Average Filter Plot Pole/Zero Plot*
+
 ## **Code**
 ```cpp
 //Input data; global declaration
@@ -51,7 +69,7 @@ void loop() // put your main code here, to run repeatedly:
   }
 }
 ```
-### **the plots are given below** - 
+
 <img style="float: right;" src="gifs\ma.gif">
 <br/>
 
@@ -59,22 +77,6 @@ void loop() // put your main code here, to run repeatedly:
 
 <br/>
 
-<img style="float: right;" src="polezero\MA-M.png"  width="600" height="325">
-<br/>
-
- *Moving Average Filter Plot Magnitude Plot* 
-<br/>
-
-<img style="float: right;" src="polezero\MA-P.png" width="600" height="325">
-<br/>
-
- *Moving Average Filter Plot Phase Plot* 
-
-
-<img style="float: right;" src="polezero\MAPz.png" width="540" height="432">
-<br/>
-
- *Moving Average Filter Plot Pole/Zero Plot*
 
 # *First Order Difference Filter*
 
