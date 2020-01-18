@@ -304,7 +304,7 @@ void loop() // put your main code here, to run repeatedly:
 ```
 
 ##### **the plot is given below** - 
-<img style="float: right;" src="gifs\sf.gif">
+<img style="float: right;" src="gifs\ques4.gif">
 
 ##### **Smoothed First Order Difference Filter Plot Blue:  X; Red: Y**
 
