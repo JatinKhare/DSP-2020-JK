@@ -297,8 +297,6 @@ void loop() // put your main code here, to run repeatedly:
     }
   Serial.print(x[i]);
   Serial.print(',');
-  //Serial.print(y[i]*100);
-  //Serial.print(',');
   Serial.println(y1[i]/(1.5));
   }
 }
