@@ -42,7 +42,7 @@ All the poles are at the origin.
 
 
 ## **Arduino Code**
-Find the datafile [HERE](/data/ppgdata_Fs_100hz_1000samples_baseline_highfrequeny_noise.csv/).
+Find the datafile [HERE](/data/ppgdata_Fs_100hz_1000samples_baseline_highfrequeny_noise.csv).
 
 ```cpp
 //Input data; global declaration
