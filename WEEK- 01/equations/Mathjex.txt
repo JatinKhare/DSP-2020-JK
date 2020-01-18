@@ -1,0 +1,52 @@
+y[n] = \frac{1}{L+1}\sum_{k=0}^{L}x[n-k] \\~\\
+
+Y(z) = \frac{1}{L+1}\sum_{k=0}^{L}z^{-k}X(z) \,\,\,;\,\,\ \,\,\,\,\,\
+
+H(z) = \frac{1}{L+1}\sum_{k=0}^{L}z^{-k} \\~\\
+
+H(z) = \frac{Y(z)}{X(z)} = \frac{1}{8} \frac{z^8-1}{z^7(z-1)}  \\~\\
+
+
+
+\textrm{Zeros} \rightarrow z= -1,\, i,\, -i,\, e^{\frac{\pi}{4}j},\, e^{-\frac{\pi}{4}j},\, -e^{\frac{\pi}{4}j},\, -e^{-\frac{\pi}{4}j} \,\,\,;\,\,\ \,\,\,\,\,\   \textrm{Poles} \rightarrow z=0 \\~\\
+
+|H(jw)| = \frac{1}{8}\frac{sin(8\frac{w}{2})}{{sin(\frac{w}{2})}} \,\,\,;\,\,\ \,\,\,\,\,\
+
+\angle H(jw) = e^{-\frac{7}{2}jw}
+
+
+
+
+
+
+
+22222222222222222222222222222222222222222222222222222
+
+
+y[n] = x[n]-x[n-1] \\~\\
+
+Y(z) = (1-z^{-1}) X(z) \,\,\,;\,\,\ \,\,\,\,\,\
+
+H(z) = \frac{z-1}{z} \\~\\
+
+
+\textrm{Zeros} \rightarrow z= 1 \,\,\,;\,\,\ \,\,\,\,\,\   \textrm{Poles} \rightarrow z=0 \\~\\
+
+|H(jw)| = 2sin(\frac{w}{2}) \,\,\,;\,\,\ \,\,\,\,\,\
+
+\angle H(jw) = tan^{-1}(cot(\frac{w}{2}))
+
+
+333333333333333333333333333333333333333333333333333333
+y[n] = x[n]-x[n-2] \\~\\
+
+Y(z) = (1-z^{-2}) X(z) \,\,\,;\,\,\ \,\,\,\,\,\
+
+H(z) = \frac{Y(z)}{X(z)}=\frac{(z-1)(z+1)}{z^2} \\~\\
+
+
+\textrm{Zeros} \rightarrow z= 1,\,-1 \,\,\,;\,\,\ \,\,\,\,\,\   \textrm{Poles} \rightarrow z=0 \\~\\
+
+|H(jw)| = 2sin(w) \,\,\,;\,\,\ \,\,\,\,\,\
+
+\angle H(jw) = tan^{-1}(cot(w))
