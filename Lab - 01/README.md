@@ -6,6 +6,7 @@ Write Arduino programs for studying the performance of-
 * Three point central difference filter <br/>
   
 The detailed lab sheet can be found [here](pdf/DSP-Experiment01.pdf).
+Matlab codes for Pole-Zero plots can be found [here](pdf/matlabpz.m)
 Let's start.
 # **1. Moving Average Filter**
 The moving average filter is a simple Low Pass FIR (Finite Impulse Response). It takes some samples of input and takes the mean of those to produce a single output. As the length of the filter increases, the smoothness of the output increases.
