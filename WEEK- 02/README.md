@@ -52,7 +52,9 @@ void loop()                     // put your main code here, to run repeatedly:
 
 
 
+# *3. First Order filtering of ppg signal*
 
+<img src="equations\eqfd.png" width="392" height="105"> <br/>
 
 ``` cpp
 int analoginputpin = A0;
@@ -68,12 +70,11 @@ void loop()                     // put your main code here, to run repeatedly:
   float y[500], y1[500];    //initializing array to store output.
   for(int i=0;i<500;i++)
   {
-    input[i] = analogRead(analoginputpin);  // read the input pin
+    input[i] = analogRead(analoginputpin); // read the input pin
     delay(10);
     Serial.print(input[i]/2); //plotting input x
     Serial.print(',');
-    //    first order difference filter
-
+    //first order difference filter
     y1[i]=input[i]-input[i-1];
     Serial.println(y1[i]-200); //plotting output y
   }
@@ -84,7 +85,8 @@ void loop()                     // put your main code here, to run repeatedly:
 
 <img style="float: right;" src="gifs\df.gif">
 
-
+# *4. Central Point Difference filtering of ppg signal*
+<img src="equations\eqsf.png" width="586" height="130">
 
 
 ``` cpp
@@ -95,7 +97,7 @@ void setup()   // put your setup code here, to run once:
 {
     Serial.begin(9600);         //  setup serial
 }
-void loop()                     // put your main code here, to run repeatedly:
+void loop()                     //  put your main code here, to run repeatedly:
 {
   int l = 10;
   float y[500], y1[500];    //initializing array to store output.
@@ -105,7 +107,6 @@ void loop()                     // put your main code here, to run repeatedly:
     delay(10);
     Serial.print(input[i]/2); //plotting input x
     //Central Point Difference filter
-
     y1[i]=input[i]-input[i-2];
     Serial.print(',');
     Serial.println(y1[i]-200); //plotting output y
@@ -116,47 +117,30 @@ void loop()                     // put your main code here, to run repeatedly:
 ```
 
 <img style="float: right;" src="gifs\sf.gif">
+<br/>
 
+## **ECG Signal 01 - 103**
 
-
-
-
-
-# *3. First Order filtering of ppg signal*
-
-# *4. Second Order filtering of ppg signal*
-
-
-# *5. ECG signal*
-
-## **Signal 01 - 103**
-1. Smoothing using Moving Average
-## **Arduino Code**
 Find the datafile [HERE](data/ECG_103_1000samples_100hz).
+
+Moving Average filter: 
 <img style="float: right;" src="gifs\103ma.gif">
 
-2. First Order Difference order filter
-Find the datafile [HERE](data/ECG_103_1000samples_100hz).
+First order difference filter:
 <img style="float: right;" src="gifs\103df.gif">
-3. Central Point Difference filter
 
-Find the datafile [HERE](data/ECG_103_1000samples_100hz).
+Central point difference filter:
 <img style="float: right;" src="gifs\103sf.gif">
 
-## **Signal 02 - 119**
-1. Smoothing using Moving Average
+## **ECG Signal 02 - 119**
 
 Find the datafile [HERE](data/ECG_119_1000samples_100hz).
+
+Moving Average filter: 
 <img style="float: right;" src="gifs\119ma.gif">
 
-2. First Order Difference order filter
-
-Find the datafile [HERE](data/ECG_119_1000samples_100hz).
-
+First order difference filter:
 <img style="float: right;" src="gifs\119df.gif">
 
-3. Central Point Difference filter
-
-Find the datafile [HERE](data/ECG_119_1000samples_100hz).
-
+Central point difference filter:
 <img style="float: right;" src="gifs\119sf.gif">
