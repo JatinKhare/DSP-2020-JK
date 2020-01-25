@@ -12,14 +12,16 @@ Write Arduino programs for studying the performance of-
 <br/>
 
 # *1. PPG Signal and Sensor*
-With each cardiac cycle the heart pumps blood to the periphery. Even though this pressure pulse is somewhat damped by the time it reaches the skin, it is enough to distend the arteries and arterioles in the subcutaneous tissue.
+With each cardiac cycle the heart pumps blood to the periphery. Even though this pressure pulse is somewhat damped by the time it reaches the skin, it is enough to distend the arteries and arterioles in the tissues.
 
 <img src="gifs\giff.gif" width="500" height="300"> 
+[Souce: wiki]
 
 The change in volume caused by the pressure pulse is detected by illuminating the skin with the light from a light-emitting diode (LED) and then measuring the amount of light either transmitted or reflected to a photodiode
 <br/>
 
 <img src="gifs\ppg_dia.jpg" width="350" height="300"> 
+[Souce: wiki]
 
 # *2. Moving Averare filtering of ppg signal*
 The moving average filter is a simple Low Pass FIR (Finite Impulse Response). It takes some samples of input and takes the mean of those to produce a single output. As the length of the filter increases, the smoothness of the output increases.
@@ -106,6 +108,8 @@ void loop()                     // put your main code here, to run repeatedly:
 The three-point central difference filter is also a FIR filter.
 
 <img src="gifs\filter.gif" width="300" height="200"><br/>
+[Source: Electronics Tutorials]
+
 The main difference between a 1st and 2nd order low pass filter is that the stop band roll-off will be twice the 1st order filters at 40dB/decade.
 <hr />
 <img src="equations\eqsf.png" width="586" height="130">

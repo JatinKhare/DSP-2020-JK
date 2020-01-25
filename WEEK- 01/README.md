@@ -175,6 +175,8 @@ void loop() // put your main code here, to run repeatedly:
 The three-point central difference filter is also a FIR filter.
 
 <img src="gifs\filter.gif" width="300" height="200"><br/>
+[Source: Electronics Tutorials]
+
 The main difference between a 1st and 2nd order low pass filter is that the stop band roll-off will be twice the 1st order filters at 40dB/decade.
 <hr />
 
