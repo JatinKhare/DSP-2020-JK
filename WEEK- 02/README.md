@@ -7,23 +7,24 @@ Write Arduino programs for studying the performance of-
 * First order difference filter
 * Three point central difference filter <br/>
 
-[ * ] Analyze the performance of the filters using two pre-recorded ECG signals by live recording the ppg signal using a Photoplethysmogram Sensor <br/>
+[ * ] Analyze the performance of the filters using two pre-recorded ECG signals by live recording the ppg signal using a ppg Sensor <br/>
 [ * ] Analyze the performance of the filters using two pre-recorded ECG signals.
 <br/>
 
-# *1. PPG Signal and Sensor*
+#  *PPG Signal and Sensor*
+<strong>P</strong>hoto<strong>P</strong>lethysmo<strong>G</strong>ram (ppg) 
 With each cardiac cycle the heart pumps blood to the periphery. Even though this pressure pulse is somewhat damped by the time it reaches the skin, it is enough to distend the arteries and arterioles in the tissues.
 
 <img src="gifs\giff.gif" width="500" height="300"> 
 [Souce: wiki]
 
-The change in volume caused by the pressure pulse is detected by illuminating the skin with the light from a light-emitting diode (LED) and then measuring the amount of light either transmitted or reflected to a photodiode
+The change in volume caused by the pressure pulse is detected by illuminating the skin with the light from a light-emitting diode (LED) and then measuring the amount of light either transmitted or reflected to a photodiode which can be eventually used to detect blood volume changes in the microvascular bed of tissue
 <br/>
 
 <img src="gifs\ppg_dia.jpg" width="350" height="300"> 
 [Souce: wiki]
 
-# *2. Moving Averare filtering of ppg signal*
+# *1. Moving Average filtering of ppg signal*
 The moving average filter is a simple Low Pass FIR (Finite Impulse Response). It takes some samples of input and takes the mean of those to produce a single output. As the length of the filter increases, the smoothness of the output increases.
 <hr />
 
@@ -71,7 +72,7 @@ void loop()                     // put your main code here, to run repeatedly:
 
 
 
-# *3. First Order filtering of ppg signal*
+# *2. First Order filtering of ppg signal*
 The first-order difference filter is a FIR filter, where previous input is subtracted from the current input to get the current output. Also known as derivative filter, it essentisally emphasizes the high-slope components of the signal.<hr />
 <img src="equations\eqfd.png" width="392" height="105"> <br/>
 
@@ -104,7 +105,7 @@ void loop()                     // put your main code here, to run repeatedly:
 
 <img style="float: right;" src="gifs\df.gif">
 
-# *4. Central Point Difference filtering of ppg signal*
+# *3. Central Point Difference filtering of ppg signal*
 The three-point central difference filter is also a FIR filter.
 
 <img src="gifs\filter.gif" width="300" height="200"><br/>
@@ -144,6 +145,19 @@ void loop()                     //  put your main code here, to run repeatedly:
 
 <img style="float: right;" src="gifs\sf.gif">
 <br/>
+<br/>
+
+# *ECG Signal and Machine*
+Electrocardiography is the process of producing a graph of voltage versus time – of the electrical activity of the heart. 
+
+The signal thus achieved is called <strong>E</strong>lectro<strong>C</strong>ardio<strong>G</strong>ram.
+
+<img src="gifs\ecg.png" width="300" height="300"><br/>
+[Source: wiki]
+
+The overall goal of performing an ECG is to obtain information about the electrical function of the heart.
+
+Electrocardiographs are recorded by machines that consist of a set of electrodes connected to a central unit. Usually, 10 electrodes are attached to the body to measure the specific electrical potential differences.
 
 ## **ECG Signal 01 - 103**
 
