@@ -124,12 +124,18 @@ void loop()                     //  put your main code here, to run repeatedly:
 Find the datafile [HERE](data/ECG_103_1000samples_100hz).
 
 Moving Average filter: 
+<br/>
+
 <img style="float: right;" src="gifs\103ma.gif">
 
 First order difference filter:
+<br/>
+
 <img style="float: right;" src="gifs\103df.gif">
 
 Central point difference filter:
+<br/>
+
 <img style="float: right;" src="gifs\103sf.gif">
 
 ## **ECG Signal 02 - 119**
@@ -137,10 +143,16 @@ Central point difference filter:
 Find the datafile [HERE](data/ECG_119_1000samples_100hz).
 
 Moving Average filter: 
+<br/>
+
 <img style="float: right;" src="gifs\119ma.gif">
 
 First order difference filter:
+<br/>
+
 <img style="float: right;" src="gifs\119df.gif">
 
 Central point difference filter:
+<br/>
+
 <img style="float: right;" src="gifs\119sf.gif">
