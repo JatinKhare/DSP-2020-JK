@@ -1,8 +1,25 @@
 # **DSP Laboratory; Week -02**
 ## **PPG signal realtime processing**
+## Aim-
 
+Write Arduino programs for studying the performance of-
+* Moving Average Filter
+* First order difference filter
+* Three point central difference filter <br/>
 
-# *1. PPG Sensor*
+[ * ] Analyze the performance of the filters using two pre-recorded ECG signals by live recording the ppg signal using a Photoplethysmogram Sensor <br/>
+[ * ] Analyze the performance of the filters using two pre-recorded ECG signals.
+<br/>
+
+# *1. PPG Signal and Sensor*
+With each cardiac cycle the heart pumps blood to the periphery. Even though this pressure pulse is somewhat damped by the time it reaches the skin, it is enough to distend the arteries and arterioles in the subcutaneous tissue.
+
+<img src="gifs\giff.gif" width="500" height="300"> 
+
+The change in volume caused by the pressure pulse is detected by illuminating the skin with the light from a light-emitting diode (LED) and then measuring the amount of light either transmitted or reflected to a photodiode
+<br/>
+
+<img src="gifs\ppg_dia.jpg" width="350" height="300"> 
 
 # *2. Moving Averare filtering of ppg signal*
 The moving average filter is a simple Low Pass FIR (Finite Impulse Response). It takes some samples of input and takes the mean of those to produce a single output. As the length of the filter increases, the smoothness of the output increases.
@@ -53,7 +70,7 @@ void loop()                     // put your main code here, to run repeatedly:
 
 
 # *3. First Order filtering of ppg signal*
-
+The first-order difference filter is a FIR filter, where previous input is subtracted from the current input to get the current output. Also known as derivative filter, it essentisally emphasizes the high-slope components of the signal.<hr />
 <img src="equations\eqfd.png" width="392" height="105"> <br/>
 
 ``` cpp
@@ -86,6 +103,11 @@ void loop()                     // put your main code here, to run repeatedly:
 <img style="float: right;" src="gifs\df.gif">
 
 # *4. Central Point Difference filtering of ppg signal*
+The three-point central difference filter is also a FIR filter.
+
+<img src="gifs\filter.gif" width="300" height="200"><br/>
+The main difference between a 1st and 2nd order low pass filter is that the stop band roll-off will be twice the 1st order filters at 40dB/decade.
+<hr />
 <img src="equations\eqsf.png" width="586" height="130">
 
 
