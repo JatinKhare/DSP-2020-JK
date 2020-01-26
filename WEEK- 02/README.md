@@ -18,7 +18,7 @@ With each cardiac cycle the heart pumps blood to the periphery. Even though this
 <img src="gifs\giff.gif" width="500" height="300"> 
 [Souce: wiki]
 
-The change in volume caused by the pressure pulse is detected by illuminating the skin with the light from a light-emitting diode (LED) and then measuring the amount of light either transmitted or reflected to a photodiode which can be eventually used to detect blood volume changes in the microvascular bed of tissue
+The change in volume caused by the pressure pulse is detected by illuminating the skin with the light from a light-emitting diode (LED) and then measuring the amount of light either transmitted or reflected to a photodiode which can be eventually used to detect the volume change of blood.
 <br/>
 
 <img src="gifs\ppg_dia.jpg" width="350" height="300"> 
