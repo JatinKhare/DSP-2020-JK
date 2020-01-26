@@ -69,7 +69,7 @@ void loop()                     // put your main code here, to run repeatedly:
 
 
 <img style="float: right;" src="gifs\ma.gif">
-
+Blue:  X; Red: Y
 
 
 # *2. First Order filtering of ppg signal*
@@ -104,6 +104,8 @@ void loop()                     // put your main code here, to run repeatedly:
 ```
 
 <img style="float: right;" src="gifs\df.gif">
+Blue:  X; Red: Y
+
 
 # *3. Central Point Difference filtering of ppg signal*
 The three-point central difference filter is also a FIR filter.
@@ -144,6 +146,8 @@ void loop()                     //  put your main code here, to run repeatedly:
 ```
 
 <img style="float: right;" src="gifs\sf.gif">
+Blue:  X; Red: Y
+
 <br/>
 <br/>
 
@@ -167,16 +171,19 @@ Moving Average filter:
 <br/>
 
 <img style="float: right;" src="gifs\103ma.gif">
+Blue:  X; Red: Y
 
 First order difference filter:
 <br/>
 
 <img style="float: right;" src="gifs\103df.gif">
+Blue:  X; Red: Y
 
 Central point difference filter:
 <br/>
 
 <img style="float: right;" src="gifs\103sf.gif">
+Blue:  X; Red: Y
 
 ## **ECG Signal 02 - 119**
 
@@ -186,13 +193,16 @@ Moving Average filter:
 <br/>
 
 <img style="float: right;" src="gifs\119ma.gif">
+Blue:  X; Red: Y
 
 First order difference filter:
 <br/>
 
 <img style="float: right;" src="gifs\119df.gif">
+Blue:  X; Red: Y
 
 Central point difference filter:
 <br/>
 
 <img style="float: right;" src="gifs\119sf.gif">
+Blue:  X; Red: Y
