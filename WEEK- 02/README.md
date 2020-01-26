@@ -31,7 +31,7 @@ The moving average filter is a simple Low Pass FIR (Finite Impulse Response). It
 
 ## *Moving Average (MA) Filter: Time Domain Equation and Transfer Function*
 
-<img src="equations\eqma.png" width="309" height="63"> 
+<img src="equations\eqma.png" width="618" height="126"> 
 
 ``` cpp
 int analoginputpin = A0;
