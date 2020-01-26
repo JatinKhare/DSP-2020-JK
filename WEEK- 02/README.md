@@ -7,7 +7,7 @@ Write Arduino programs for studying the performance of-
 * First order difference filter
 * Three point central difference filter <br/>
 
-[ * ] Analyze the performance of the filters using two pre-recorded ECG signals by live recording the ppg signal using a ppg Sensor <br/>
+[ * ] Analyze the performance of the filters by live recording the ppg signal using a ppg Sensor <br/>
 [ * ] Analyze the performance of the filters using two pre-recorded ECG signals.
 <br/>
 
