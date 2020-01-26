@@ -11,8 +11,7 @@ Write Arduino programs for studying the performance of-
 [ * ] Analyze the performance of the filters using two pre-recorded ECG signals.
 <br/>
 
-#  *PPG Signal and Sensor*
-<strong>P</strong>hoto<strong>P</strong>lethysmo<strong>G</strong>ram (ppg) 
+#  *PPG [<strong>P</strong>hoto<strong>P</strong>lethysmo<strong>G</strong>ram] Signal and Sensor*
 With each cardiac cycle the heart pumps blood to the periphery. Even though this pressure pulse is somewhat damped by the time it reaches the skin, it is enough to distend the arteries and arterioles in the tissues.
 
 <img src="gifs\giff.gif" width="500" height="300"> 
