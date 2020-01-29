@@ -8,10 +8,10 @@ To calculate the frequncy of the ppg signal and recorded speech signal using aut
 # Autocorrelation
 Autocorrelation, also known as serial correlation, is the correlation of a signal with a delayed copy of itself as a function of delay.
 
-<img src="equations\auto.jpg"> 
+<img src="equations\auto.JPG"> 
 where,
-<img src="equations\range.jpg"> 
-<img src="gifs\theory.jpg"> 
+<img src="equations\range.JPG"> 
+<img src="gifs\theory.JPG"> 
 
 
 
