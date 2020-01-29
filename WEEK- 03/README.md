@@ -6,14 +6,18 @@ To calculate the frequncy of the ppg signal and recorded speech signal using aut
 
 
 # Autocorrelation
+Autocorrelation, also known as serial correlation, is the correlation of a signal with a delayed copy of itself as a function of delay.
 
-
-
+<img src="equations\auto.jpg"> 
+where,
+<img src="equations\range.jpg"> 
+<img src="gifs\theory.jpg"> 
 
 
 
 
 # **1. Frequency of PPG signal**
+Find the datafile [HERE](PPG_Fs_100hz_2000samples).
 
 Code
 ```cpp
@@ -137,12 +141,14 @@ Blue:  Autocorrelation Function (Non-filtered ppg);
 | 65.93   | 67.42        |  2.25% |
 | 61.22   | 60.61        | 0.9% |
 | 66.67  | 65.22        | 2.17%|
-|Average:  65.50   | Average:64.61        | Average Error: 2.35%|
+|Average: 65.50   | Average: 64.61        | Average Error: 2.35%|
 
 
 
 
 # **2. Frequency of sppech signal**
+
+Find the datafile [HERE](data/speechdata_4001samples_8000hzsampling).
 
 Code
 ```cpp
