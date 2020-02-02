@@ -10,10 +10,8 @@ Autocorrelation, also known as serial correlation, is the correlation of a signa
 
 <img src="equations\auto.JPG"> 
 where,
-<img src="equations\range.JPG"> 
+<img src="equations\range.JPG">
 <img src="gifs\theory.JPG"> 
-
-
 
 
 # **1. Frequency of PPG signal**
