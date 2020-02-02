@@ -1,8 +1,8 @@
 # **DSP Laboratory; Week -03**
-## **Frequncy of PPG and Speech signal;**
+## **Frequency of PPG and Speech signal;**
 ## Aim-
 
-To calculate the frequncy of the ppg signal and recorded speech signal using autocorrelation function.
+To calculate the frequency of the ppg signal and recorded speech signal using autocorrelation function.
 
 
 # Autocorrelation
