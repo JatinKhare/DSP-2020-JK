@@ -17,7 +17,7 @@ where,
 
 
 # **1. Frequency of PPG signal**
-Find the datafile [HERE](PPG_Fs_100hz_2000samples).
+Find the datafile [HERE](PPG_Fs_100hz_2000samples.csv).
 
 Code
 ```cpp
@@ -135,7 +135,7 @@ Blue:  Autocorrelation Function (Non-filtered ppg);
 
 # Frequency Values
 
-| Filtered ppg Frequency  (in Hz)     |  Non-Filtered ppg Frequency  (in Hz)   |  Error | 
+| Filtered ppg Frequency  (in Beats/Sec)     |  Non-Filtered ppg Frequency  (in Beats/Sec)   |  Error | 
 | ----------- | ----------- | ----------- |
 | 68.18      | 65.22       |  4.34% |
 | 65.93   | 67.42        |  2.25% |
@@ -148,7 +148,7 @@ Blue:  Autocorrelation Function (Non-filtered ppg);
 
 # **2. Frequency of sppech signal**
 
-Find the datafile [HERE](data/speechdata_4001samples_8000hzsampling).
+Find the datafile [HERE](data/speechdata_4001samples_8000hzsampling.csv).
 
 Code
 ```cpp
