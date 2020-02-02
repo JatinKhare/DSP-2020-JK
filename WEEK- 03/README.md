@@ -144,7 +144,7 @@ Blue:  Autocorrelation Function (Non-filtered ppg);
 
 
 
-# **2. Frequency of sppech signal**
+# **2. Frequency of speech signal**
 
 Find the datafile [HERE](data/speechdata_4001samples_8000hzsampling.csv).
 
