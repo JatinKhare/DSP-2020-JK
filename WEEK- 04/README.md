@@ -8,27 +8,27 @@ To calculate the pulse period of the ppg signal using Discrete Fourier Transform
 # Discrete Fourier Transform
 
 Discrete Fourier transform (DFT) converts a finite sequence of equally-spaced samples of a function into a same-length sequence of equally-spaced samples of the discrete-time Fourier transform (DTFT), which is a complex-valued function of frequency.
-Autocorrelation, also known as serial correlation, is the 
 
-<img src="equations\dft1.JPG"> 
 
-which is equal to,
+<img src="equations\ddftt.png"> 
+
+which can be expanded to,
 
 <img src="equations\dft2.JPG">
 
 # Concept
 1. Moving Average filter is applied to smooth the signal and remove high frequency components (noise)
-2. Find out the DFT of the signal and find the index $k$ for which magnitude response is maximum.
+2. Find out the DFT of the signal and find the index k for which magnitude response is maximum.
 3. Take the first peak in magnitude response.
 
-The corresponding frequency for a $k$ index is-
+The corresponding frequency for a k index is-
 <img src="equations\fre.JPG" width="80">
 
 where
 
-$k$ = index,
-$F_S$ = Sampling Frequency
-$N$ = Length of the signal
+k = index,
+Fs = Sampling Frequency
+N = Length of the signal
 
 <img src="equations\pulse.JPG" width="180">
 
