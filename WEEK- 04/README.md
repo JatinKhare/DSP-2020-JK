@@ -18,8 +18,7 @@ which can be expanded to,
 
 # Concept
 1. Moving Average filter is applied to smooth the signal and remove high frequency components (noise)
-2. Find out the DFT of the signal and find the index k for which magnitude response is maximum.
-3. Take the first peak in magnitude response.
+2. Find out the DFT of the signal and find the index k for which we get the first peak in magnitude response.
 
 The corresponding frequency for a k index is-
 
@@ -28,7 +27,7 @@ The corresponding frequency for a k index is-
 where
 
 k = index,
-Fs = Sampling Frequency
+Fs = Sampling Frequency,
 N = Length of the signal
 
 <img src="equations\pulse.JPG" width="180">
@@ -101,14 +100,11 @@ void loop() {
       k = i;
     }
   }
-  //Serial.println(k);
+  //Serial.println(k*Fs/N*60)*
  
   }
 
 ```
-
-# Results
-
 ## *Plot*
 
 <img style="float: right;" src="gifs\ppg1.webp">
@@ -201,7 +197,7 @@ void loop() { // put your main code here, to run repeatedly:
 
 # Results
 
-| Pulse Rate using DFT  (in Beats/Sec)     |  Pulse Rate using Autocorrelation  (in Beats/Sec)   |  Error | 
+| Pulse Rate using DFT  (in Beats/Min)     |  Pulse Rate using Autocorrelation  (in Beats/Min)   |  Error | 
 | ----------- | ----------- | ----------- |
 |    71   |    80    |  12.67% | 
 
@@ -282,6 +278,6 @@ Autocorrelation plot using matlab.
 
 # Results (MATLAB)
 
-| Pulse Rate using DFT  (in Beats/Sec)     |  Pulse Rate using Autocorrelation  (in Beats/Sec)   |  Error | 
+| Pulse Rate using DFT  (in Beats/Min)     |  Pulse Rate using Autocorrelation  (in Beats/Min)   |  Error | 
 | ----------- | ----------- | ----------- |
 |        80 |     68.1   |  17.47% |
