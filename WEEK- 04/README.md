@@ -203,11 +203,8 @@ void loop() { // put your main code here, to run repeatedly:
 
 | Pulse Rate using DFT  (in Beats/Sec)     |  Pulse Rate using Autocorrelation  (in Beats/Sec)   |  Error | 
 | ----------- | ----------- | ----------- |
-|       |        |  % |
-|    |        |  % |
-|    |        | % |
-|   |        | %|
-|Average:    | Average:        | Average Error: %|
+|    71   |    80    |  12.67% | 
+
 
 
 ## Matlab Implementation
@@ -283,8 +280,8 @@ DFT magnitude plot using matlab.
 <img src="gifs\mauto.png">
 Autocorrelation plot using matlab.
 
-# Results
+# Results (MATLAB)
 
 | Pulse Rate using DFT  (in Beats/Sec)     |  Pulse Rate using Autocorrelation  (in Beats/Sec)   |  Error | 
 | ----------- | ----------- | ----------- |
-|        80 |     68.1818   |  % |
+|        80 |     68.1   |  17.47% |
