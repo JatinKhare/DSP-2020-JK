@@ -110,7 +110,8 @@ void loop() {
 <img style="float: right;" src="gifs\ppg1.webp">
 Blue:  Original ppg;
 
-<img style="float: right;" src="gifs\dft.gif">
+<img style="float: right;" src="gifs\dft.gif" width="800" height = "416">
+
 Blue: DFT Function; 
 
 
