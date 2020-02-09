@@ -1,8 +1,8 @@
 # **DSP Laboratory; Week -04**
-## **Frequency of PPG using DFT;**
+## **Pulse Rate of PPG using DFT;**
 ## Aim-
 
-To calculate the pulse period of the ppg signal using Discrete Fourier Transform and autocorrelation function.
+To calculate the pulse rate of the PPG signal using DFT and autocorrelation function and find out the error using both the methods.
 
 
 # Discrete Fourier Transform
