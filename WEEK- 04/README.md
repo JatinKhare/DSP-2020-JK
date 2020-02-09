@@ -270,11 +270,16 @@ display(60/(index_C/25));
 ```
 
 <img src="gifs\mdft.png">
-DFT magnitude plot using matlab.
 
+*DFT magnitude spectrum plot using matlab.*
+
+</br>
 
 <img src="gifs\mauto.png">
-Autocorrelation plot using matlab.
+
+*Autocorrelation plot using matlab.*
+
+</br>
 
 # Results (MATLAB)
 
