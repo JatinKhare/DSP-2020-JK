@@ -22,6 +22,7 @@ which can be expanded to,
 3. Take the first peak in magnitude response.
 
 The corresponding frequency for a k index is-
+
 <img src="equations\fre.JPG" width="80">
 
 where
