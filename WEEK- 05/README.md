@@ -77,12 +77,12 @@ void setup()
 }
 
 void loop() {
-  double vReal[SAMPLES], v2Imag[SAMPLES];
+  double vReal[SAMPLES], vImag[SAMPLES];
 
     for (int i = 0; i < SAMPLES; i++)
   {
     vReal[i] = 0;
-    v2Imag[i] = 0;
+    vImag[i] = 0;
   }
   
     for (int i = 0; i < 750; i++)
@@ -129,13 +129,13 @@ void loop() {
   
   /*FFT*/                                                                // builtin FFT library and methods
   //FFT.Windowing(vReal, SAMPLES, FFT_FORWARD);       //Forward FFT
-  FFT.Compute(vReal, v2Imag, SAMPLES, FFT_FORWARD);
+  FFT.Compute(vReal, vImag, SAMPLES, FFT_FORWARD);
   //FFT.ComplexToMagnitude(vReal, v2Imag, SAMPLES);                       //Converting R+iI to real magnitude
   //double x = FFT.MajorPeak(vReal, SAMPLES, SAMPLING_FREQUENCY);
   
   for (int i = 0; i < (SAMPLES); i++)
   {
-    resp[i]=sqrt(v2Imag[i]*v2Imag[i]+vReal[i]*vReal[i]);
+    resp[i]=sqrt(vImag[i]*vImag[i]+vReal[i]*vReal[i]);
     //Serial.print(resp[i]);    //View only this line in serial plotter to visualize the bins
     //Serial.print(',');
   }
@@ -144,12 +144,12 @@ void loop() {
   //Filtering in Frequency Domain
   int k = 21;
 
-  double v2Real[SAMPLES], v2Imag1[SAMPLES];
+  double v2Real[SAMPLES], v2Imag[SAMPLES];
 
     for (int i = 0; i < SAMPLES; i++)
   {
     v2Real[i] = vReal[i];
-    v2Imag1[i] = v2Imag[i];
+    v2Imag[i] = vImag[i];
   }
 
     double maxi = 0;
@@ -165,13 +165,13 @@ void loop() {
         
         vReal[i]=0;
         vReal[SAMPLES-i]=0;
-        v2Imag[i]=0;
-        v2Imag[SAMPLES-i]=0;
+        vImag[i]=0;
+        vImag[SAMPLES-i]=0;
     }
         for(int i=k;i<750-k;i++)
     {
         v2Real[i]=0;
-        v2Imag1[i]=0;
+        v2Imag[i]=0;
     }
 
 //       for (int i = 0; i < (SAMPLES); i++)
@@ -184,11 +184,11 @@ void loop() {
 //        Serial.print(',');`
 //      }
   
-    FFT.Compute(vReal, v2Imag, SAMPLES, FFT_REVERSE); //Backward FFT
-    FFT.Compute(v2Real, v2Imag1, SAMPLES, FFT_REVERSE); //Backward FFT
+    FFT.Compute(vReal, vImag, SAMPLES, FFT_REVERSE); //Backward FFT
+    FFT.Compute(v2Real, v2Imag, SAMPLES, FFT_REVERSE); //Backward FFT
 
-    FFT.ComplexToMagnitude(vReal, v2Imag, SAMPLES); //Converting R+iI to real magnitude
-    FFT.ComplexToMagnitude(v2Real, v2Imag1, SAMPLES); //Converting R+iI to real magnitude
+    FFT.ComplexToMagnitude(vReal, vImag, SAMPLES); //Converting R+iI to real magnitude
+    FFT.ComplexToMagnitude(v2Real, v2Imag, SAMPLES); //Converting R+iI to real magnitude
 
   for (int i = 0; i < 750; i++)
   {
@@ -203,7 +203,6 @@ void loop() {
   //delay(1000);  //Repeat the process every second OR:
 
 }
-  }
 
 ```
 ## *Plot*
