@@ -18,15 +18,20 @@ which can be written as,
 
 # Concept
 1. Moving Average filter is applied to smooth the signal and remove high frequency components (noise)
-2. Find out the DFT of the signal using FFT algorithm.
+2. DFT of the signal is found using FFT algorithm.
 
-Frequency of Respiratory Signal:  0.05 to 0.5 Hz (3 - 30 bpm)
 
-Frequency of PPG Signal: 0.5 to 5 Hz (30 - 300 bpm)
+|`Frequency Range` | Frequency of Respiratory Signal:  0.05 to 0.5 Hz (3 - 30 bpm) </br> Frequency of PPG Signal: 0.5 to 5 Hz (30 - 300 bpm)|
+|-|-|
+
+
+
+
+
 
  and find the index k for which we get the first peak in magnitude response (this corresponds to the respitatory signal).
  
-3. Remove the respiratory signal frequency components and take IFFT to extract the ppg pulse. Similarly, make the components of ppg will result in extracting respiratory signal.
+1. Remove the respiratory signal frequency components and take IFFT to extract the ppg pulse. Similarly, make the components of ppg will result in extracting respiratory signal.
 
 
 The corresponding frequency for a k index is-
@@ -53,7 +58,8 @@ Code
 #include <arduinoFFT.h>
 #include <math.h>
 arduinoFFT FFT = arduinoFFT();
-float x[750] = { -293.9933169,-571.4949447,-287.7493388,407.5377746,670.4527126, .... 574.9055267,188.1593344,-191.0241869,-192.5122974}
+float x[750] = { -293.9933169,-571.4949447,-287.7493388,407.5377746,670.4527126,
+ .... 574.9055267,188.1593344,-191.0241869,-192.5122974}
 const uint16_t SAMPLES = 1024; //This value MUST ALWAYS be a power of 2
 const double SAMPLING_FREQUENCY = 25;
 double mean=0;
@@ -294,7 +300,6 @@ title('Extracted Respiratory signal')
 
 <img src="gifs\matlabplot.png">
 
-
 </br>
 
 # Results (MATLAB)
@@ -302,3 +307,5 @@ title('Extracted Respiratory signal')
 | Index of the maxima in ppg fft plot     |  Frequency Value   |  Rate | 
 | ----------- | ----------- | ----------- |
 |        10 |    0.244   |  14.64 bpm |
+
+
