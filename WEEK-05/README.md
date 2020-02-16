@@ -18,24 +18,22 @@ which can be written as,
 
 # Concept
 1. Moving Average filter is applied to smooth the signal and remove high frequency components (noise)
-2. DFT of the signal is found using FFT algorithm.
+2. DFT of the signal is found using FFT algorithm. Removing the respiratory signal frequency components and taking IFFT will result in the ppg pulse. Similarly, removing the components of ppg will result in extracting the respiratory signal.
+3. For the respiratory rate, find the index k for which we get the first peak in magnitude response of 'ppg component removed' frequency response.
 
+
+<center>
 
 |`Frequency Range` | Frequency of Respiratory Signal:  0.05 to 0.5 Hz (3 - 30 bpm) </br> Frequency of PPG Signal: 0.5 to 5 Hz (30 - 300 bpm)|
 |-|-|
 
-
-
-
-
-
- and find the index k for which we get the first peak in magnitude response (this corresponds to the respitatory signal).
- 
-1. Remove the respiratory signal frequency components and take IFFT to extract the ppg pulse. Similarly, make the components of ppg will result in extracting respiratory signal.
+</center>
 
 
 The corresponding frequency for a k index is-
-<img src="equations\fre.JPG" width="80">
+<center>
+<img src="equations\fre.JPG" width="120">
+</center>
 
 where
 
