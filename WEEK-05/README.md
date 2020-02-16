@@ -40,9 +40,9 @@ where
 k = index,
 Fs = Sampling Frequency,
 N = Length of the signal
-
-<img src="equations\pulse.JPG" width="180">
-
+<center>
+<img src="equations\pulse.JPG" width="200">
+</center>
 
 # **2. Separation of PPG and Respiratory signal**
 
