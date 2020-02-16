@@ -46,7 +46,7 @@ N = Length of the signal
 
 # **2. Separation of PPG and Respiratory signal**
 **
-Find the datafile [HERE](Exp03_PPG_25hz_75samples.csv).
+Find the datafile [HERE](data/ppgwithRespiration_25hz_30seconds.csv).
 
 Here we have used the arduino FFT library. 
 
