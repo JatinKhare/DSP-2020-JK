@@ -17,7 +17,7 @@ In order to remove the freuency components upto 0.4 Hz, we need to follow the fo
 2. Place a pole for the frequency 0.4 Hz with |z| = r, where r is given by:
   
 <center>
-<img src="equations\r.jpg" width="200">
+<img src="equations\r.JPG" width="200">
 </center>
 
 3. Calculate the value of transfer function gain b using the power value at the cut-off frequency = 1/2. 
