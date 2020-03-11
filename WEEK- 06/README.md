@@ -1,15 +1,35 @@
 # **DSP Laboratory; Week -06**
-## **High Pass Filter using Pole Zero Placement Method**
+# High Pass Filter using Pole Zero Placement Method
 ## Aim-
 
-Generate synthetic baseline model with frequency components 0.1 Hz, 0.2 Hz and 0.25 Hz, add this to the clean ppg signal. 
-Apply the algorithm (derived using pole-zero placement method) to remove the synthrtic baseline from x[n].
+Using the pole-zero placement method, design a filter to remove the synthetic baseline from a ppg signal with synthetic baseline frequency components of 0.1 Hz, 0.2 Hz and 0.25 Hz. 
+
+# **1. The Pole Zero Placement Method**
+
+It is a very simple but approximated method for designing filters. We use the z-plane plot to place the poles and zeros at appropriate locations and then find out the transfer function of the filter using the plot.
+
+The z-plane plot is given by:
+
+</br>
+
+<center>
+<img src="gifs\pzplace.png">
+</center>
+
+</br>
+
+</br>
+The Transfer Function is given by:
 
 
-# The Pole Zero Placement Method
+<center>
+<img src="gifs\tf.png">
+</center>
 
+Source: dsprelated.com
 
 ## Concept
+
 
 In order to remove the freuency components upto 0.4 Hz, we need to follow the following steps:
 
@@ -20,19 +40,15 @@ In order to remove the freuency components upto 0.4 Hz, we need to follow the fo
 <img src="equations\r.JPG" width="200">
 </center>
 
-3. Calculate the value of transfer function gain b using the power value at the cut-off frequency = 1/2. 
+3. Transfer function gain b is then calculated using the cut-off frequency, Wc.
    
-
-   </br>
+</br>
 
 
 # **2. Baseline Filteration using Arduino**
 
-Find the datafile [HERE](data/ppgwithRespiration_25hz_30seconds.csv).
-
-Here we have used the arduino [FFT library](data/arduinoFFT-master). 
-
 Code
+
 ``` cpp
 
 float x[]={-0.875693857,-0.919727917,-0.953165283,-0.973946454...-0.99913659,-1,-0.999465027,-0.985283842,}
@@ -64,6 +80,7 @@ void loop() {
   for(int i=3;i<n;i++){
 
     y[i]= 0.9384*y[i-1]+0.9843*x[i]-0.9843*x[i-1];
+
     //y[i] = g*(x[i]-(k+1)*x[i-1]+(k+1)*x[i-2]-x[i-3]);
     e[i] = y[i]-x[i];
     sum_e += e[i]*e[i];
@@ -93,14 +110,15 @@ void loop() {
 ## *Plot*
 
 <img style="float: right;" src="gifs\ppg.gif">
-Blue:  Original ppg;
+Blue:  Original ppg with base line components;
+Red: Filtered ppg Signal
 
+</br>
 
 <img style="float: right;" src="gifs\error.gif">
-Blue:  FFT of original signal;
+Blue: Error
 
-
-# Results
+# **3. Results**
 
 | Root Mean Sqaure Error (RMSE)|  Signal to Noise Ratio (SNR) in dB | 
 | ----------- | ----------- | 
