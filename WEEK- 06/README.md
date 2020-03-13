@@ -35,13 +35,14 @@ In order to remove the freuency components upto a fixed value (here, 0.4 Hz) Hz,
    </br>
 
 2. Place a pole for the frequency 0.4 Hz with |z| = r, where r is given by:
+   
 <center>
 
 <img src="equations\r.JPG" width="200">
 
 </center>
 
-3. Transfer function gain b is then calculated using the cut-off frequency, Wc.
+1. Transfer function gain b is then calculated using the cut-off frequency, Wc.
 
 </br>
 
