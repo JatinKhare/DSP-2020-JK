@@ -56,7 +56,7 @@ Code
 
 ``` cpp
 
-float x[]={-0.875693857,-0.919727917,-0.953165283,-0.973946454...-0.99913659,-1,-0.999465027,-0.985283842,}
+float x[]={-0.875693857,-0.919727917,-0.953165283,-0.973946454, ..., -0.99913659,-1,-0.999465027,-0.985283842,}
 
 const int n = sizeof(x)/sizeof(float);
 
@@ -131,9 +131,11 @@ Blue: Error
 ## Filter Visualization using Matlab 
 
 ``` matlab
-r = 0.9686;
+r = 0.9686;   %calculate  using the above mentioned formula
+
 zer = [1]'; 
 pol = [r*exp(-1i*pi/100)];
+
 [b,a] = zp2tf(zer,pol,1);
 fvtool(b,a);
 fvtool(b,a,'Analysis','polezero');
