@@ -6,7 +6,7 @@ Using the pole-zero placement method, design a filter to remove the synthetic ba
 
 # **1. The Pole Zero Placement Method**
 
-It is a very simple but approximated method for designing filters. We use the z-plane plot to place the poles and zeros at appropriate locations and then find out the transfer function of the filter using the plot.
+This is a very simple but approximated method for designing filters. We use the z-plane plot to place the poles and zeros at appropriate locations and then find out the transfer function of the filter using the plot.
 
 The z-plane plot is given by:
 
@@ -28,16 +28,26 @@ Source: dsprelated.com
 
 ## Concept
 
-In order to remove the freuency components upto 0.4 Hz, we need to follow the following steps:
+In order to remove the freuency components upto a fixed value (here, 0.4 Hz) Hz, we need to follow the following steps:
 
-1. Place a zero at |z|=1, for the frequency 0 Hz. 
+1. Place a zero at |z|=1, for the frequency 0 Hz.
+   
+   </br>
+
 2. Place a pole for the frequency 0.4 Hz with |z| = r, where r is given by:
 <center>
 
 <img src="equations\r.JPG" width="200">
 
 </center>
+
 3. Transfer function gain b is then calculated using the cut-off frequency, Wc.
+
+</br>
+
+4. Then, the time-domain equation is obtained using the inverse Z-transform. Then, the input signal is filtered using the time domain equation.
+   
+</br>
 
 # **2. Baseline Filteration using Arduino**
 
@@ -63,25 +73,25 @@ void setup() {
 
 void loop() {
   float y[n]={0};
+
   for(int i=0;i<n;i++)
   {
-    x[i]+=0.1*sin(2*PI*(0.1/80)*i)+0.2*sin(2*PI*(0.2/80)*i)+0.15*sin(2*PI*(0.25/80)*i);
+    x[i]+=0.1*sin(2*PI*(0.1/80)*i)+0.2*sin(2*PI*(0.2/80)*i)+0.15*sin(2*PI*(0.25/80)*i); //Synthetic Baseline component
   }
-  k = 2*cos(PI/100);
-  g = 0.3564;
+  //Initializing the arrays
   sum_e = 0;
   x_sq = 0;
   for(int i=3;i<n;i++){
 
-    y[i]= 0.9384*y[i-1]+0.9843*x[i]-0.9843*x[i-1];
+    y[i]= 0.9384*y[i-1]+0.9843*x[i]-0.9843*x[i-1]; //The filter equation
 
-    //y[i] = g*(x[i]-(k+1)*x[i-1]+(k+1)*x[i-2]-x[i-3]);
-    e[i] = y[i]-x[i];
-    sum_e += e[i]*e[i];
+    e[i] = y[i]-x[i];   //Error calculation
+    sum_e += e[i]*e[i]; //
     x_sq += x[i]*x[i];
   }
-  RMSE = sqrt(sum_e/sizeof(x));
-  SNR = 10*log(x_sq/sum_e);
+  RMSE = sqrt(sum_e/sizeof(x)); //Root Mean Sqaure Error 
+  SNR = 10*log(x_sq/sum_e);     //Sigal to Noise Ratio
+
   for(int i=0;i<n;i++)
   {
     Serial.print(x[i]);
@@ -92,24 +102,21 @@ void loop() {
     //Serial.print(",");
     //Serial.print("SNR :");
     //Serial.println(SNR);
-
   }
-  
-  // put your main code here, to run repeatedly:
-
 }
-
-
 ```
 ## *Plot*
 
 <img style="float: right;" src="gifs\ppg.gif">
+
 Blue:  Original ppg with base line components;
+</br>
 Red: Filtered ppg Signal
 
 </br>
 
 <img style="float: right;" src="gifs\error.gif">
+
 Blue: Error
 
 # **3. Results**
@@ -129,16 +136,14 @@ pol = [r*exp(-1i*pi/100)];
 [b,a] = zp2tf(zer,pol,1);
 fvtool(b,a);
 fvtool(b,a,'Analysis','polezero');
-
 ```
-
 <img src="gifs\pole_zero.png">
 
+</br>
 
 <img src="gifs\magnitude.png">
 
+</br>
 
 <img src="gifs\phase.png">
-
-
 </br>
