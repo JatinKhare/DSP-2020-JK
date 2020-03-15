@@ -28,7 +28,7 @@ Source: dsprelated.com
 
 ## Concept
 
-In order to remove the freuency components upto a fixed value (here, 0.4 Hz) Hz, we need to follow the following steps:
+In order to remove the frequency components upto a fixed value (here, 0.4 Hz), we need to follow the following steps:
 
 1. Place a zero at |z|=1, for the frequency 0 Hz.
    
@@ -41,8 +41,9 @@ In order to remove the freuency components upto a fixed value (here, 0.4 Hz) Hz,
 <img src="equations\r.JPG" width="200">
 
 </center>
+(Fs = 80Hz, given)
 
-1. Transfer function gain b is then calculated using the cut-off frequency, Wc.
+3. Transfer function gain b is then calculated using the cut-off frequency, Wc.
 
 </br>
 
@@ -131,7 +132,7 @@ Blue: Error
 ## Filter Visualization using Matlab 
 
 ``` matlab
-r = 0.9686;   %calculate  using the above mentioned formula
+r = 0.9686;   %calculated  using the above mentioned formula
 
 zer = [1]'; 
 pol = [r*exp(-1i*pi/100)];
